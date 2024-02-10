@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf Example</title>
+    <style>
+        /* Add your custom CSS styles here */
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button.yes {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        .button.no {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        h2 {
+            font-family: Arial, sans-serif;
+            /* Add other font properties as needed */
+        }
+
+
+        .gif {
+            width: 50%; /* Adjust the width as needed */
+            max-height: 80vh; /* Adjust the maximum height as needed */
+            border-radius: 10px; /* Optional: Add rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img class="gif" src="/animated.gif" alt="Animated GIF" width="200">
+    <h2>Do you want to be my Valentine?</h2>
+    <div>
+        <button class="button yes" onclick="window.location.href='/promise'">Yes</button>
+        <button class="button no" onclick="window.location.href='/n'">No</button>
+    </div>
+</div>
+
+<!--<script>-->
+<!--    function handleYes() {-->
+<!--        alert("Great! I love you ❤️");-->
+<!--    }-->
+
+<!--    function handleNo() {-->
+<!--        alert("Oh no 😢");-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
